@@ -18,7 +18,7 @@ class Crawler(DocumentCrawler):
 
     def crawl(self):
         index_url = urlparse.urljoin(
-            self.ARCHIVE_URI, '/index/gazette-index-latest.jsonlines')
+            self.ARCHIVE_URI, 'index/gazette-index-latest.jsonlines')
         logger.info("Fetching %s" % index_url)
         r = requests.get(index_url)
         r.raise_for_status()
@@ -33,4 +33,4 @@ class Crawler(DocumentCrawler):
                 'source_url': gazette.get('original_uri'),
             })
             logger.info("Emitting %s" % gazette.get('unique_id'))
-            self.emit_url(meta, urlparse.urljoin(self.ARCHIVE_URI, gazette.get('archive_path')))
+            self.emit_url(meta, gazette.get('archive_url'))
