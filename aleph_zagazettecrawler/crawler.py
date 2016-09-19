@@ -26,7 +26,6 @@ class Crawler(DocumentCrawler):
             gazette = json.loads(line)
 
             if self.skip_incremental(gazette.get('unique_id')):
-                logger.info("Skipping known %s", gazette.get('unique_id'))
                 continue
 
             meta = self.make_meta({
