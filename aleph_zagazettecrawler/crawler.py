@@ -24,6 +24,11 @@ class Crawler(DocumentCrawler):
         r.raise_for_status()
         for idx, line in enumerate(r.text.splitlines()):
             gazette = json.loads(line)
+
+            if self.skip_incremental(gazette.get('unique_id')):
+                logger.info("Skipping known %s", gazette.get('unique_id'))
+                continue
+
             meta = self.make_meta({
                 'foreign_id': gazette.get('unique_id'),
                 'title': gazette.get('issue_title'),
