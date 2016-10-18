@@ -4,7 +4,16 @@ setup(
     name='aleph_zagazettecrawler',
     entry_points={
         'aleph.crawlers': [
-            'zagazettes = aleph_zagazettecrawler.crawler:Crawler'
+            'ZA_gazettes = aleph_zagazettecrawler.crawler:ZA_Crawler',
+            'ZA_EC_gazettes = aleph_zagazettecrawler.crawler:ZA_EC_Crawler',
+            'ZA_FS_gazettes = aleph_zagazettecrawler.crawler:ZA_FS_Crawler',
+            'ZA_GT_gazettes = aleph_zagazettecrawler.crawler:ZA_GT_Crawler',
+            'ZA_LP_gazettes = aleph_zagazettecrawler.crawler:ZA_LP_Crawler',
+            'ZA_MP_gazettes = aleph_zagazettecrawler.crawler:ZA_MP_Crawler',
+            'ZA_NC_gazettes = aleph_zagazettecrawler.crawler:ZA_NC_Crawler',
+            'ZA_NL_gazettes = aleph_zagazettecrawler.crawler:ZA_NL_Crawler',
+            'ZA_NW_gazettes = aleph_zagazettecrawler.crawler:ZA_NW_Crawler',
+            'ZA_WC_gazettes = aleph_zagazettecrawler.crawler:ZA_WC_Crawler',
         ]
     },
     version='0.1',
