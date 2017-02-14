@@ -74,6 +74,7 @@ class Crawler(DocumentCrawler):
                 'mime_type': 'application/pdf',
                 'file_name': os.path.basename(gazette.get('archive_path')),
                 'source_url': gazette.get('original_uri'),
+                'publication_date': gazette.get('publication_date'),
             })
             logger.info("Emitting %s" % gazette.get('unique_id'))
             self.emit_url(meta, gazette.get('archive_url'))
