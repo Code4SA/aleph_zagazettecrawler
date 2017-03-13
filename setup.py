@@ -17,7 +17,7 @@ setup(
         ]
     },
     version='0.1',
-    description='Aleph crawler to index South African government gazettes archived at http://s3-eu-west-1.amazonaws.com/code4sa-gazettes/archive',
+    description='Aleph crawler to index South African government gazettes archived at http://archive.opengazettes.org.za'
     url='http://github.com/code4sa/aleph_zagazettecrawler',
     author='Code For South Africa',
     author_email='info@code4sa.org',
