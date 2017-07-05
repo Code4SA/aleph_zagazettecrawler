@@ -19,6 +19,7 @@ CLASS_COLLECTION = {
     'ZA_NL_Crawler': 'ZA_NL_gazettes',
     'ZA_NW_Crawler': 'ZA_NW_gazettes',
     'ZA_WC_Crawler': 'ZA_WC_gazettes',
+    'ZA_transvaal_Crawler': 'ZA_transvaal_gazettes',
 }
 
 CLASS_JURISDICTION = {
@@ -32,6 +33,7 @@ CLASS_JURISDICTION = {
     'ZA_NL_Crawler': 'ZA-NL',
     'ZA_NW_Crawler': 'ZA-NW',
     'ZA_WC_Crawler': 'ZA-WC',
+    'ZA_transvaal_Crawler': 'ZA-transvaal',
 }
 
 CLASS_LABEL = {
@@ -45,6 +47,7 @@ CLASS_LABEL = {
     'ZA_NL_Crawler': 'KwaZulu-Natal Provincial Gazettes',
     'ZA_NW_Crawler': 'North West Provincial Gazettes',
     'ZA_WC_Crawler': 'Western Cape Provincial Gazettes',
+    'ZA_transvaal_Crawler': 'Transvaal Provincial Gazettes',
 }
 
 
@@ -128,3 +131,8 @@ class ZA_NW_Crawler(Crawler):
 class ZA_WC_Crawler(Crawler):
     COLLECTION_ID = CLASS_COLLECTION.get('ZA_WC_Crawler')
     COLLECTION_LABEL = CLASS_LABEL.get('ZA_WC_Crawler')
+
+
+class ZA_transvaal_Crawler(Crawler):
+    COLLECTION_ID = CLASS_COLLECTION.get('ZA_transvaal_Crawler')
+    COLLECTION_LABEL = CLASS_LABEL.get('ZA_transvaal_Crawler')
