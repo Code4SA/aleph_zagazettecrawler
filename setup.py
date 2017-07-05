@@ -14,9 +14,10 @@ setup(
             'ZA_NL_gazettes = aleph_zagazettecrawler.crawler:ZA_NL_Crawler',
             'ZA_NW_gazettes = aleph_zagazettecrawler.crawler:ZA_NW_Crawler',
             'ZA_WC_gazettes = aleph_zagazettecrawler.crawler:ZA_WC_Crawler',
+            'ZA_transvaal_gazettes = aleph_zagazettecrawler.crawler:ZA_transvaal_Crawler',
         ]
     },
-    version='0.1',
+    version='0.1.1',
     description='Aleph crawler to index South African government gazettes archived at http://archive.opengazettes.org.za',
     url='http://github.com/code4sa/aleph_zagazettecrawler',
     author='Code For South Africa',
